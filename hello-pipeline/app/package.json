@@ -1,7 +1,0 @@
-{
-  "name": "hello-pipeline",
-  "version": "1.0.0",
-  "description": "Tiny Lambda to demo AWS native CI/CD",
-  "main": "handler.js",
-  "license": "MIT"
-}
