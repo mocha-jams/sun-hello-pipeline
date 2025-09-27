@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - node -v || curl -sL https://rpm.nodesource.com/setup_18.x | bash - && yum install -y nodejs zip
+  build:
+    commands:
+      - cd app
+      - zip -r ../lambda.zip .
+artifacts:
+  files:
+    - lambda.zip
